@@ -23,15 +23,9 @@ public class ExcelParserController {
         return excelParserService.readExcelFile(filePath);
     }*/
 
-    @GetMapping("/readExcel")
-    public List<Customer> readExcel() throws IOException {
-        log.info("Read Excel File ");
-        return excelParserService.readExcelFile("C:\\Projects\\JavaProjects\\excel-parser\\src\\main\\resources\\static\\customers.xlsx");
-    }
-
     @GetMapping("/fromExcelToText")
     public void fromExcelToText() throws IOException {
         log.info("Read Excel File and Save it in File");
-        excelParserService.fromExcelFileToText("C:\\Projects\\JavaProjects\\excel-parser\\src\\main\\resources\\static\\customers.xlsx","C:\\Projects\\JavaProjects\\excel-parser\\src\\main\\resources\\static\\customers-script.txt");
+        excelParserService.fromExcelFileToText("C:\\Projects\\JavaProjects\\excel-parser\\src\\main\\resources\\static\\customers-.xlsx","C:\\Projects\\JavaProjects\\excel-parser\\src\\main\\resources\\static\\customers-script.txt");
     }
 }
