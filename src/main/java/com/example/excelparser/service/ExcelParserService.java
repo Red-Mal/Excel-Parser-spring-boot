@@ -1,6 +1,7 @@
 package com.example.excelparser.service;
 
 import com.example.excelparser.entities.Customer;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
@@ -15,6 +16,7 @@ import java.util.Iterator;
 import java.util.List;
 
 @Service
+@Slf4j
 public class ExcelParserService {
     public List<Customer> readExcelFile(String filePath) throws IOException {
         List<Customer> customers = new ArrayList<>();
@@ -43,7 +45,7 @@ public class ExcelParserService {
 
                 } catch (Exception e) {
                     // Handle invalid data in the row
-                    System.err.println("Error processing row " + row.getRowNum() + ": " + e.getMessage());
+                    log.error("Error processing row " + row.getRowNum() + ": " + e.getMessage());
                 }
 
 
@@ -52,7 +54,7 @@ public class ExcelParserService {
         }
         catch (IOException e) {
             // Handle file I/O errors
-            System.err.println("Error reading Excel file: " + e.getMessage());
+            log.error("Error reading Excel file: " + e.getMessage());
             throw e;
         }
 
@@ -77,7 +79,8 @@ public class ExcelParserService {
             }
         } catch (IOException e) {
             // Handle file I/O errors
-            System.err.println("Error reading Excel file: " + e.getMessage());
+            log.error("Error reading Excel file: " + e.getMessage());
+
             throw e;
         }
     }
@@ -142,7 +145,7 @@ public class ExcelParserService {
             writer.write(line);
         } catch (Exception e) {
             // Handle invalid data in the row
-            System.err.println("Error processing row " + row.getRowNum() + ": " + e.getMessage());
+            log.error("Error processing row " + row.getRowNum() + ": " + e.getMessage());
         }
     }
 
