@@ -1,0 +1,3 @@
+INSERT INTO customer VALUES ('1',redmal1,redmal1@gmail.com,Wed Aug 16 14:16:08 WEST 2023,Thu Aug 17 14:16:08 WEST 2023);
+INSERT INTO customer VALUES ('2',redmal2,redmal2@gmail.com,Wed Aug 16 14:16:08 WEST 2023,Thu Aug 17 14:16:08 WEST 2023);
+INSERT INTO customer VALUES ('3',redmal3,redmal3@gmail.com,Wed Aug 16 14:16:08 WEST 2023,Thu Aug 17 14:16:08 WEST 2023);
