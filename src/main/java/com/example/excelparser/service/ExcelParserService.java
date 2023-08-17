@@ -136,7 +136,7 @@ public class ExcelParserService {
     public void writeExcelRowToFile(FileWriter writer, Row row){
         try {
             // Export to TXT
-            String line = String.format("INSERT INTO customer VALUES ('%d',%s,%s,%s,%s);%n",
+            String line = String.format("INSERT INTO customer VALUES (%d,'%s','%s','%s','%s');%n",
                     (long) row.getCell(0).getNumericCellValue(),
                     row.getCell(1).getStringCellValue(),
                     row.getCell(2).getStringCellValue(),
