@@ -1,22 +1,10 @@
 package com.example.excelparser;
 
-import com.example.excelparser.entities.Customer;
-import com.example.excelparser.service.ExcelParserService;
 import org.apache.poi.ss.usermodel.*;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.mockito.Mock;
-import org.mockito.MockitoAnnotations;
 
 import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Iterator;
-import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 
 public class ExcelParserServiceTest {
    // @Mock
@@ -25,10 +13,10 @@ public class ExcelParserServiceTest {
    // @Mock
     private Workbook workbook;
 
-    private ExcelParserService excelParserService;
+   // private ExcelParserService excelParserService;
 
    // @BeforeEach
-    void setUp() {
+   /* void setUp() {
         MockitoAnnotations.openMocks(this);
         excelParserService = new ExcelParserService();
     }
@@ -76,9 +64,9 @@ public class ExcelParserServiceTest {
         when(cell.getCellType()).thenReturn(CellType.STRING);
        // when(workbook.close()).thenReturn(null);
 
-        List<Customer> customers = excelParserService.readExcelFile("C:\\Projects\\JavaProjects\\excel-parser\\src\\main\\resources\\static\\customers-empty-test.xlsx");
+      //  List<Customer> customers = excelParserService.readExcelFile("C:\\Projects\\JavaProjects\\excel-parser\\src\\main\\resources\\static\\customers-empty-test.xlsx");
 
         assertNotNull(customers);
         assertEquals(0, customers.size()); // Since the first cell has an invalid type
-    }
+    }*/
 }

@@ -12,6 +12,9 @@ import lombok.NoArgsConstructor;
 
 import java.util.Date;
 
+/**
+ * The type Customer.
+ */
 @Entity
 @Data
 @NoArgsConstructor
