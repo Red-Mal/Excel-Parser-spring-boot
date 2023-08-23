@@ -33,15 +33,12 @@ This Spring Boot application reads customer data from an Excel file and generate
 
 1. Place your Excel file in the `src/main/resources` directory.
 2. Run the Spring Boot application.
-3. SQL queries will be generated and saved to `output.sql` in the project root directory.
+3. SQL queries will be generated and saved to `customer-script.txt` in the project root directory `src/main/resources/static`.
 
 ## Contributing
 
 Contributions are welcome! Please feel free to open a pull request.
 
-## License
-
-This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
