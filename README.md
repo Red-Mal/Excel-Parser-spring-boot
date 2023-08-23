@@ -4,7 +4,7 @@
 This Spring Boot application reads customer data from an Excel file and generates SQL INSERT queries to insert the data into a database.
 
 
-<img width="660" alt="image" src="https://github.com/Red-Mal/Excel-Parser-spring-boot/assets/57734887/885eabe1-b232-47cb-9b2d-8fabe3d6c33e">
+<img width="800" alt="image" src="https://github.com/Red-Mal/Excel-Parser-spring-boot/assets/57734887/885eabe1-b232-47cb-9b2d-8fabe3d6c33e">
 
 
 
